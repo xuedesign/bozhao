@@ -12,6 +12,7 @@
 			2.2 主選單設定
 			2.3 完美底部佈局
 			2.4 版權列區塊
+			2.5 中間內文
 		3 公司簡介
 		4 工程實績
 		5 經銷優惠專區
@@ -189,9 +190,112 @@ footer{
 	margin:8px 60px 0 0}	
 .copyright_tw{
 	padding-top:10px;
-	text-shadow: 1px 1px 0 #D4D4D4;}
-	
+	text-shadow: 1px 1px 0 #D4D4D4}
 
+/*2.5 中間內文---------------------------*/
+#contenter{
+	display:block;
+	width:960px;
+	margin:0 auto;
+	padding:30px 0}
+#contenter h2{ display:none}
+.box_marquee{
+	display:block;
+	width:942px;
+	height:35px;
+	background:url(../images/bg_salesbox.png) no-repeat;
+	padding:5px 30px 0 130px;
+	line-height:25px;
+	overflow:hidden}
+.box_marquee a:link {text-decoration:none; color:#0492ce}
+.box_marquee a:visited {text-decoration:none; color:#8c8c8c}
+.box_marquee a:hover {text-decoration: underline; color:#F50}
+
+.box_lastproject{
+	display:block;
+	width:960px;
+	margin-top:30px}				
+.box_lastproject h3{
+	display:block;
+	float:left;
+	font-size:1.25em;
+	line-height:22px;
+	color:#6FB9CE;
+	font-weight:bold;
+	letter-spacing:1px;
+	background:url(../images/icon_i.png) no-repeat;
+	padding:0 0 0 20px;
+	margin:0}
+.box_lastproject .btn_more a{
+	display:block;
+	float:right;
+	margin-right:5px;
+	padding:5px 15px;
+	background: -webkit-gradient(linear, left top, right top, from(#76C4D9), to(#4DB7E5));
+	background: -webkit-linear-gradient(top, #76C4D9, #4DB7E5);
+	background: -moz-linear-gradient(top, #76C4D9, #4DB7E5);
+	background: -o-linear-gradient(top, #76C4D9, #4DB7E5);
+	background: -ms-linear-gradient(top, #76C4D9, #4DB7E5);
+	background: linear-gradient(top, #76C4D9, #4DB7E5);
+	background-color: #76C4D9;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size:0.813em;
+	color:#FFF;
+	text-decoration:none}
+.box_lastproject .btn_more a:hover{
+	background: -webkit-gradient(linear, left top, right top, from(#1A4055), to(#235571));
+	background: -webkit-linear-gradient(top, #1A4055, #235571);
+	background: -moz-linear-gradient(top, #1A4055, #235571);
+	background: -o-linear-gradient(top, #1A4055, #235571);
+	background: -ms-linear-gradient(top, #1A4055, #235571);
+	background: linear-gradient(top, #1A4055, #235571);
+	background-color: #1A4055}
+.top_lastproject{
+	display:block;
+	padding-bottom:15px;
+	margin:0 20px 10px 0;
+	border-bottom:1px solid #bcbbbb}	
+#box_prolist{position:relative}
+#box_prolist .listmain{
+	display:block;
+	width:150px;
+	min-height:150px;
+	background:#FFF;
+	border:1px solid #d4d3d3;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 6px #D8D7D7;
+	-moz-box-shadow: 0 0 6px #D8D7D7;
+	box-shadow: 0 0 6px #D8D7D7}
+#box_prolist .listmain:hover{
+	-webkit-box-shadow: 0 0 20px #F19A97;
+	-moz-box-shadow: 0 0 20px #F19A97;
+	box-shadow: 0 0 20px #F19A97}
+.listmain .ptag_01, .listmain .ptag_02, .listmain .ptag_03, .listmain .ptag_04{
+	display:block;
+	float:right;
+	margin-top:8px;
+	padding:3px 15px;
+	font-size:0.938em;
+	line-height:20px;
+	color:#FFF;
+	letter-spacing:1px}	
+.listmain .ptag_01{ background:#27a1dd}
+.listmain .ptag_02{ background:#c9496a}
+.listmain .ptag_03{ background:#5fc058}
+.listmain .ptag_04{ background:#af5def}
+.listmain img{
+	clear:both;
+	display:block;
+	width:276px;
+	margin:5px auto}
+.listmain h4{ font-size:1em; line-height:22px; padding-left:12px}
+.listmain a:link {text-decoration:none; color:#0492ce}
+.listmain a:visited {text-decoration:none; color:#8c8c8c}
+.listmain a:hover {text-decoration:none; color:#F50}		
 
 /* 3. 公司簡介 
 -----------------------------------------------------------------------------------------------

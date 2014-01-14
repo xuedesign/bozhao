@@ -15,6 +15,29 @@ window.onload = externalLinks;
 $(function() {
           $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
       });
+
+//首頁跑馬燈
+$(document).ready(
+		function(){
+			$('#news').innerfade({
+				animationtype: 'slide',
+				speed: 1000,
+				timeout: 3000,
+				type: 'sequence',
+				containerheight: '1em'
+			});
+          }
+	);
+	
+//首頁無縫排列
+$(document).ready(function() {
+   $('#box_prolist').BlocksIt({
+      numOfCol: 3,
+      offsetX: 10,
+      offsetY: 10,
+      blockElement: '.grid'
+   });
+});
 	  
 
   
