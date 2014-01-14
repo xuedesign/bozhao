@@ -261,7 +261,7 @@ footer{
 #box_prolist .listmain{
 	display:block;
 	width:150px;
-	min-height:150px;
+	min-height:200px;
 	background:#FFF;
 	border:1px solid #d4d3d3;
 	-webkit-border-radius: 3px;
@@ -291,6 +291,7 @@ footer{
 	clear:both;
 	display:block;
 	width:276px;
+	min-height:50px;
 	margin:5px auto}
 .listmain h4{ font-size:1em; line-height:22px; padding-left:12px}
 .listmain a:link {text-decoration:none; color:#0492ce}

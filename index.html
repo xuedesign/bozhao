@@ -9,9 +9,9 @@
 <title>首頁│柏兆科技，遠傳節費電話、遠傳寬頻網路與總機、監視系統的專業廠商</title>
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/xue_201401-min.css"/>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -61,8 +61,9 @@
         </header>
         
         <section id="contenter">
-           <script src="script/jquery.innerfade.js"></script>
+           
            <div class="box_marquee">
+               
                <h2>經銷優惠方案</h2>
                <ul id="news">
                   <li><a href="content/sales/main.html" title="【遠傳家用雙省節費盒方案】一個費用同時可以光纖上網和撥打便宜的家用電話，網路月租費可抵家用電話通話費等同上網...">【遠傳家用雙省節費盒方案】一個費用同時可以光纖上網和撥打便宜的家用電話，網路月租費可抵家用電話通話費等同上網...宜的家用電話，網路月租費可抵家用電話通話費等同上網</a></li>
@@ -73,7 +74,7 @@
                </ul>
            </div>
            
-           <script src="script/blocksit.min.js"></script>
+          
            <div class="box_lastproject">
                <div class="top_lastproject">
                     <h3>柏兆工程實績</h3>
@@ -87,9 +88,8 @@
                        1、通訊電信 (藍色)
                        2、機房建置 (紅色)
                        3、資訊系統整合 (綠色)
-                       4、監視系統 (紫色) 
-                  -->
-                  <div class="grid listmain">
+                       4、監視系統 (紫色) -->
+                 <div class="grid listmain">
                      <a href="content/projects/main.html" title="全球一動WIFI-公車專案">
                          <p class="ptag_01">通訊電信</p>
                          <img src="images/pic_sample-01.jpg" alt="施工照片">
@@ -146,6 +146,28 @@
                      </a>
                   </div>
                </section>
+               <script src="script/blocksit.js"></script>
+				  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
+                  <script>
+                  $(function(){
+                      $('body').waitForImages({
+                          waitForAll: true, 
+                          each: function(loaded, count, success) {
+                             $('.log').html(loaded + ' / ' + count + ' 張圖片 ' + (success ? '載入成功' : '載入失敗') +  '.');
+                             $(this).addClass('loaded');
+                          }, 
+                          finished: function() {
+                          $('#box_prolist').BlocksIt({
+                                      numOfCol: 3,
+                                      offsetX: 10,
+                                      offsetY: 10,
+                                      blockElement: '.grid'
+                                   });	
+                          }
+                      });
+                  });
+                  </script>
+               
            </div>
         </section>
      </div> 
@@ -159,8 +181,9 @@
          E-Mail：<a href="mailto:q0989012@seed.net.tw" title="聯絡我們">q0989012@seed.net.tw</a>&nbsp;&nbsp;&nbsp;&nbsp;地址：<a href="http://mapof.it/桃園縣蘆竹鄉竹中街41號" title="[另開視窗]查閱公司地址" rel="external">338桃園縣蘆竹鄉竹中街41號</a></p>
        <br class="clean">  
      </section>   
-   </footer>    
+   </footer>
 
+<script src="script/jquery.innerfade.js"></script>
 <script src="script/jquery.lazyload.js"></script>
 <script src="script/web_set.js"></script> 
 </body>

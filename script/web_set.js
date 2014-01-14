@@ -27,18 +27,4 @@ $(document).ready(
 				containerheight: '1em'
 			});
           }
-	);
-	
-//首頁無縫排列
-$(document).ready(function() {
-   $('#box_prolist').BlocksIt({
-      numOfCol: 3,
-      offsetX: 10,
-      offsetY: 10,
-      blockElement: '.grid'
-   });
-});
-	  
-
-  
-	  
+	);	  
