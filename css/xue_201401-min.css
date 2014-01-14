@@ -1,0 +1,216 @@
+/**********************************************************************************************
+
+	Title: CSS for xuedeisgn
+	Author: Elmo Wu (by xuedesign studio)
+	Build: v1.0
+	Date: 2014/01
+
+***********************************************************************************************
+		1 通用
+		2 首頁
+		    2.1 頂端區塊
+			2.2 主選單設定
+			2.3 完美底部佈局
+			2.4 版權列區塊
+		3 公司簡介
+		4 工程實績
+		5 經銷優惠專區
+		6 員工專區
+		7 聯絡我們 
+***********************************************************************************************/
+
+/* 1. 通用 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+body{
+	margin: 0;
+	padding:0;
+	background: url(../images/bg_sitetop.jpg) repeat-x;
+	font-family:"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU", Arial, Helvetica, sans-serif;
+	font-size:100%;
+	line-height:20px;
+	color:#3b3b3b}
+a:link {text-decoration:underline; color:#0492ce}
+a:visited {text-decoration:underline; color:#8c8c8c}
+a:hover {text-decoration:none; color:#F50}
+::selection { background:#27a1dd; color:#FFF}
+form{margin:0; padding:0}
+image{border:0}
+
+.clean{ clear:both}
+.hidden{ display:none}
+
+/* 2. 首頁 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#wrap{ display:block; width:1024px; margin:0 auto}
+
+/*2.1 頂端區塊---------------------------*/
+header{ display:block; width:1024px}
+#box_top{ display:block; width:960px; margin:0 auto}
+#box_top h1 a{ 
+   display:block; 
+   float:left;
+   width:240px;
+   height:61px;
+   margin-bottom:11px;
+   text-indent:-9999px;
+   background:url(../images/logo.png) no-repeat}
+
+#box_banner{ 
+   clear:both; 
+   display:block; 
+   width:1024px; 
+   height:209px; 
+   background:url(../images/banner.jpg) no-repeat}
+#box_banner h2, #box_compwork h2{ display:none}
+#box_compwork{
+	display:block;
+	width:960px;
+	height:60px;
+	margin:0 auto;
+	background:url(../images/bg_compwork.png) no-repeat}
+#box_compwork p{
+	display:block;
+	width:540px;
+	font-size:0.938em;
+	line-height:22px;
+	text-shadow: 1px 1px 0 #EFEFEF;
+	margin-left:240px;
+	padding-top:8px}	
+
+/*2.2 主選單設定---------------------------*/	
+nav{ display:block; float:left; padding:25px 0 0 225px}
+nav h2{ display:none}
+nav li{
+	font-family:"微軟正黑體","Microsoft JhengHei"; 
+    font-size:1.125em;
+	margin-left:10px}
+.navigation li {
+	position: relative;
+	float:left}
+
+/* 選單 li 裡面連結之樣式 */
+.navigation li a, .navigation li a:visited{
+	display: block;
+	padding: 4px 10px;
+	font-size:1em;
+	line-height:30px;
+	letter-spacing:1px;
+	text-decoration:none;
+	color: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-shadow: 1px 1px 1px #363636}
+.navigation li:hover a{
+	display: block;
+	padding: 4px 10px;
+	background:#2db1f1;
+	color: #FFF;
+	text-decoration:none;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-shadow: 1px 1px 1px #363636;}
+		
+/* 特定在第一層 > 第二層或以後下拉部分之樣式 */
+.navigation ul{
+	display: none;
+	float: left;
+	position: absolute;			
+	left: 0;
+	z-index:999;	
+	margin:0}
+/* 當第一層選單被觸發時，指定第二層顯示 */
+.navigation li:hover > ul{display: block}			
+/* 特定在第二層或以後下拉部分 li 之樣式 */
+/*.navigation ul li {}*/
+/* 特定在第二層或以後下拉部分 li （最後一項不要底線）之樣式 */
+/*.navigation ul li:last-child {}*/
+/* 第二層或以後選單 li 之樣式 */
+.navigation ul a {
+	width: 130px;
+	padding: 5px 6px;
+	font-size:0.813em;	
+	color: #666;
+	background: #4A533F}
+.navigation ul a:hover { background: #1A4055; border:1px solid #CCC}
+.navigation ul li a{
+	 margin: 3px 0 0 -10px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0}	
+
+/*2.3 完美底部佈局---------------------------*/
+html, body, #wrap {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}
+#main_content{padding-bottom:126px}
+.clearfix:after{content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden}
+.clearfix {display: inline-block}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%}
+.clearfix {display: block}
+/* End hide from IE-mac */
+
+/*2.4 版權列---------------------------*/
+footer{ 
+    display:block;
+    position: relative;
+    width:100%;
+	height:126px;
+    background: url(../images/bg_footer.jpg) repeat-x;
+    margin-top: -126px}
+#box_copyright{
+	display:block;
+	width:960px;
+	margin:0 auto;
+	font-size:0.938em;
+	line-height:22px}
+#box_copyright a:link {text-decoration:none; color:#3b3b3b}
+#box_copyright a:visited {text-decoration:none; color:#3b3b3b}
+#box_copyright a:hover {text-decoration:none; color:#F50}		
+.copyright_en{ 
+    display:block;  
+	text-align:center; 
+	font-weight:bold; 
+	color:#FFF; 
+	padding-top:9px}
+.sublogo, .copyright_tw{ display:block; float:left}
+.sublogo{
+	text-indent:-9999px;
+	width:159px;
+	height:43px;
+	background:url(../images/logo_sub.png) no-repeat;
+	margin:8px 60px 0 0}	
+.copyright_tw{
+	padding-top:10px;
+	text-shadow: 1px 1px 0 #D4D4D4;}
+	
+
+
+/* 3. 公司簡介 
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+
+
+/* 4. 工程實績
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+
+/* 5. 經銷優惠專區
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+
+/* 4. 員工專區
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+
+/* 4. 聯絡我們
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+
