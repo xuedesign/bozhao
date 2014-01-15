@@ -104,7 +104,7 @@ nav li{
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	text-shadow: 1px 1px 1px #363636}
-.navigation li:hover a{
+.navigation li:hover a, .navigation li a.navin{
 	display: block;
 	padding: 4px 10px;
 	background:#2db1f1;
@@ -226,10 +226,8 @@ footer{
 	background:url(../images/icon_i.png) no-repeat;
 	padding:0 0 0 20px;
 	margin:0}
-.box_lastproject .btn_more a{
+.box_lastproject .btn_more a, aside .btn_more a{
 	display:block;
-	float:right;
-	margin-right:5px;
 	padding:5px 15px;
 	background: -webkit-gradient(linear, left top, right top, from(#76C4D9), to(#4DB7E5));
 	background: -webkit-linear-gradient(top, #76C4D9, #4DB7E5);
@@ -241,10 +239,12 @@ footer{
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	font-size:0.813em;
+	font-size:0.938em;
 	color:#FFF;
 	text-decoration:none}
-.box_lastproject .btn_more a:hover{
+.box_lastproject .btn_more a{ float:right; margin-right:5px}
+aside .btn_more a{ width:90%; margin:0 auto; text-align:center}	
+.box_lastproject .btn_more a:hover, aside .btn_more a:hover{
 	background: -webkit-gradient(linear, left top, right top, from(#1A4055), to(#235571));
 	background: -webkit-linear-gradient(top, #1A4055, #235571);
 	background: -moz-linear-gradient(top, #1A4055, #235571);
@@ -258,10 +258,9 @@ footer{
 	margin:0 20px 10px 0;
 	border-bottom:1px solid #bcbbbb}	
 #box_prolist{position:relative}
-#box_prolist .listmain{
+#box_prolist .listmain, aside .listmain{
 	display:block;
 	width:150px;
-	min-height:200px;
 	background:#FFF;
 	border:1px solid #d4d3d3;
 	-webkit-border-radius: 3px;
@@ -270,7 +269,9 @@ footer{
 	-webkit-box-shadow: 0 0 6px #D8D7D7;
 	-moz-box-shadow: 0 0 6px #D8D7D7;
 	box-shadow: 0 0 6px #D8D7D7}
-#box_prolist .listmain:hover{
+#box_prolist .listmain{ min-height:200px}
+aside .listmain{ margin-bottom:15px}	
+#box_prolist .listmain:hover, aside .listmain:hover{
 	-webkit-box-shadow: 0 0 20px #F19A97;
 	-moz-box-shadow: 0 0 20px #F19A97;
 	box-shadow: 0 0 20px #F19A97}
@@ -287,12 +288,12 @@ footer{
 .listmain .ptag_02{ background:#c9496a}
 .listmain .ptag_03{ background:#5fc058}
 .listmain .ptag_04{ background:#af5def}
-.listmain img{
+#box_prolist .listmain img, aside .listmain img{
 	clear:both;
 	display:block;
-	width:276px;
-	min-height:50px;
 	margin:5px auto}
+#box_prolist .listmain img{width:276px}
+aside .listmain img{ width:130px}	
 .listmain h4{ font-size:1em; line-height:22px; padding-left:12px}
 .listmain a:link {text-decoration:none; color:#0492ce}
 .listmain a:visited {text-decoration:none; color:#8c8c8c}
@@ -301,7 +302,51 @@ footer{
 /* 3. 公司簡介 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
+#box_main{
+	display:block;
+	float:left;
+	width:800px;
+	padding-right:20px}
+#box_main h3, aside h3{
+	display:block;
+	margin:0;
+	padding:0 0 0 20px;
+	font-size:1.25em;
+	line-height:25px;
+	color:#6FB9CE;
+	font-weight:bold;
+	letter-spacing:1px;
+	background:url(../images/icon_i.png) no-repeat}
+#box_main h3{ float:left; width:30%}
+#box_main .cookie{
+	display:block;
+	float:right;
+	width:70%;
+	font-size:0.938em;
+	color:#565656;
+	text-align:right}
+#box_main .cookie span{
+	display:inline-block;
+	width:14px;
+	height:13px;
+	background: url(../images/icpn_house.png) 0 2px no-repeat; 
+	margin-right:8px}		
+#box_main hr, aside hr{ border-bottom:1px solid #d6d6d6}
+#box_main .box_profile{
+	display:block;
+	padding:0 15px 50px 20px;
+	font-size:1.063em;
+	line-height:25px}
+.box_profile img{
+	display:block;
+	float:right;
+	margin:15px 0 30px 20px}			
 
+aside{
+	display:block;
+	float:right;
+	width:160px}
+aside hr{ margin:5px 0 15px 0; padding:0}
 
 /* 4. 工程實績
 -----------------------------------------------------------------------------------------------
