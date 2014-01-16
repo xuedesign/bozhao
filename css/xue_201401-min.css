@@ -302,12 +302,10 @@ aside .listmain img{ width:130px}
 /* 3. 公司簡介 
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#box_main{
-	display:block;
-	float:left;
-	width:800px;
-	padding-right:20px}
-#box_main h3, aside h3{
+#box_main, #box_mainsingle{ display:block; padding-right:20px}
+#box_main{float:left; width:800px}
+#box_mainsingle{ width:960px}	
+#box_main h3, aside h3, #box_mainsingle h3{
 	display:block;
 	margin:0;
 	padding:0 0 0 20px;
@@ -317,26 +315,26 @@ aside .listmain img{ width:130px}
 	font-weight:bold;
 	letter-spacing:1px;
 	background:url(../images/icon_i.png) no-repeat}
-#box_main h3{ float:left; width:30%}
-#box_main .cookie{
+#box_main h3, #box_mainsingle h3{ float:left; width:30%}
+#box_main .cookie, #box_mainsingle .cookie{
 	display:block;
 	float:right;
 	width:70%;
 	font-size:0.938em;
 	color:#565656;
 	text-align:right}
-#box_main .cookie span{
+#box_main .cookie span, #box_mainsingle .cookie span{
 	display:inline-block;
 	width:14px;
 	height:13px;
 	background: url(../images/icpn_house.png) 0 2px no-repeat; 
 	margin-right:8px}		
 #box_main hr, aside hr{ border-bottom:1px solid #d6d6d6}
-#box_main .box_profile{
+#box_main .box_profile, #box_main .company_info{
 	display:block;
-	padding:0 15px 50px 20px;
 	font-size:1.063em;
 	line-height:25px}
+#box_main .box_profile{padding:0 15px 50px 20px}	
 .box_profile img{
 	display:block;
 	float:right;
@@ -356,11 +354,84 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 
-/* 4. 員工專區
+/* 6. 員工專區
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
+.box_login{
+	display:block;
+	width:361px;
+	padding:22px 0 0 0;
+	margin:30px auto 15px auto;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 9px #D8D7D7;
+	-moz-box-shadow: 0 0 9px #D8D7D7;
+	-o-box-shadow: 0 0 9px #D8D7D7;
+	-ms-box-shadow: 0 0 9px #D8D7D7;
+	box-shadow: 0 0 9px #D8D7D7;
+	border:1px solid #D8D7D7;
+	background: url(../images/bg_login.png) no-repeat #FFF}
+.box_login h4{
+	display:block;
+	width:127px;
+	height:16px;
+	background:url(../images/title_login.png) no-repeat;
+	text-indent:-9999px;
+	margin:0 auto}
+.text_area{
+	display:block;
+	width:300px;
+	margin:18px auto 0 auto;
+	padding:10px;
+	border:1px solid #a1884d;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px}
+.text_member{
+	display:block;
+	background:url(../images/textarea_login.png) no-repeat;
+	width:301px;
+	height:96px;
+	margin:22px auto 0 auto}
+.btn_login{
+	display:block;
+	width:149px;
+	height:40px;
+	margin:29px auto 20px auto;
+	background:url(../images/btn_login.png) no-repeat;
+	border:none;
+	cursor:pointer;
+	font-size:1.063em;
+	color:#FFF;
+	text-align:center;
+	letter-spacing:2px}	
+.btn_login:hover{ background:url(../images/btn_login.png) 0 -40px no-repeat}
+.text_input{
+	display:block;
+	width:220px;
+	margin-left:10px;
+	font-size:1.063em;
+	line-height:20px;
+	background:none;
+	padding:5px 8px;
+	border:none;
+	color:#565656}
+#username{ padding-top:15px; margin-bottom:22px}
 
-/* 4. 聯絡我們
+/* 7. 聯絡我們
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-
+#box_main .company_info{ float:left; padding:0 15px 80px 0;}
+#box_main .company_info li{ padding:5px 0; border-bottom:1px dashed #D5D5D5}
+#box_main .company_info li span{ padding-left:47px;}
+#box_main .company_map{
+	display:block;
+	float:right;
+	width:465px;
+	border:1px solid #D5D5D5;
+	padding:5px}
