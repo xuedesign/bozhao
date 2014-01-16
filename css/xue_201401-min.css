@@ -328,7 +328,8 @@ aside .listmain img{ width:130px}
 	width:14px;
 	height:13px;
 	background: url(../images/icpn_house.png) 0 2px no-repeat; 
-	margin-right:8px}		
+	margin-right:8px}
+#box_mainsingle .cookie .btn{ margin-left:10px}			
 #box_main hr, aside hr{ border-bottom:1px solid #d6d6d6}
 #box_main .box_profile, #box_main .company_info{
 	display:block;
@@ -422,6 +423,82 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 	border:none;
 	color:#565656}
 #username{ padding-top:15px; margin-bottom:22px}
+
+.sub_nav{
+	display:block;
+	float:left;
+	width:180px}
+.sub_nav ul{}
+.sub_nav li{
+	list-style:circle inside; 
+    font-size:1.063em;
+	margin-right:10px; 
+	padding:8px 0 8px 5px; 
+	border-bottom:1px dashed #D5D5D5}
+.sub_nav li.subnav-in{
+	padding:5px;
+	background:#0199DA;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-radius: 10px}
+.sub_nav li.subnav-in a{color:#FFF; font-weight:bold; letter-spacing:1px}		
+.sub_nav a:link, .staff_main a:link, #box_main .company_info a:link{text-decoration:none; color:#0492ce}
+.sub_nav a:visited, .staff_main a:visited, #box_main .company_info a:visited{text-decoration:none; color:#8c8c8c}
+.sub_nav a:hover, .staff_main a:hover, #box_main .company_info a:hover{text-decoration:none; color:#F50}
+.staff_main{
+	display:block;
+	float:right;
+	width:760px;
+	padding: 0 0 0 20px;
+	border-left:1px solid #D5D5D5}
+.staff_main .table{ border-bottom:1px solid #D5D5D5; border-collapse: separate; border-spacing: 1px}
+.staff_main .table th{ font-size:1.063em; text-align:center; }
+.staff_main .table td{ font-size:0.938em; text-align:center}
+.staff_main .box_page{ display:block; width:50%; margin:0 auto}
+#box_mainsingle .staff_main h3{ float:left; width:90%; margin-bottom:5px}
+.staff_main .btn{ float:right}
+.staff_main .box_txt p{ font-size:1.063em; line-height:22px; padding:5px}
+.staff_main .box_txt img{ margin:5px}
+.box_upload{
+	display:block;
+	width:760px;
+	margin:30px auto}
+.box_upload h4{
+	display:block;
+	margin:0;
+	padding:0 0 5px 25px;
+	font-size:1.25em;
+	line-height:25px;
+	color:#6FB9CE;
+	font-weight:bold;
+	letter-spacing:1px;
+	background:url(../images/icon_download.png) no-repeat;
+	border-bottom:1px solid #D5D5D5}
+.box_upload ul{ display:block; padding:0 25px}
+.box_upload li{ 
+    list-style:circle; 
+	font-size:1.063em; 
+	line-height:25px;
+	padding:8px 0;
+	border-bottom:1px dashed #D5D5D5}
+.staff_main .btn_down{
+	display:block;
+	float:right;
+	margin-top:15px}
+.post_info{ display:block; margin:-10px 0 30px 0}	
+.post_info li{ display:inline-block; margin-right:15px; font-size:.938em;}
+.post_info span{
+	padding:2px 15px;
+	background:#D5D5D5;
+	margin-right:10px;
+	text-shadow: 1px 1px 0px #EDEDED;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px}	
 
 /* 7. 聯絡我們
 -----------------------------------------------------------------------------------------------
