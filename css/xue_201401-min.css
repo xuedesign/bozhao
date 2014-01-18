@@ -362,6 +362,30 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 /* 5. 經銷優惠專區
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
+.sales_main .box_page{ clear:both; display:block; width:50%; margin:0 auto; padding-top:30px}
+.sales_list li{ display:block; padding:10px 0; border-bottom:1px dashed #D5D5D5}
+.sales_list h4{
+	font-size:1.125em;
+	line-height:25px;
+	color:#0199DA;
+	font-weight:bold;
+	letter-spacing:1px}
+.sales_list p{ font-size:0.938em; line-height:20px; color:#8c8c8c}
+.sales_list a h4:hover{ color:#f50}	
+.sales_list .sales_pic{
+	display:block;
+	float:left;
+	width:110px;
+	height:90px;
+	padding:5px;
+	border:1px solid #D5D5D5;
+	overflow:hidden}
+.sales_list .sales_pic img{ width:100px}	
+.sales_list .sales_txt{
+	display:block;
+	float:right;
+	width:625px;
+	padding-left:15px}
 
 /* 6. 員工專區
 -----------------------------------------------------------------------------------------------
@@ -455,7 +479,7 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 .sub_nav a:link, .staff_main a:link, #box_main .company_info a:link{text-decoration:none; color:#0492ce}
 .sub_nav a:visited, .staff_main a:visited, #box_main .company_info a:visited{text-decoration:none; color:#8c8c8c}
 .sub_nav a:hover, .staff_main a:hover, #box_main .company_info a:hover{text-decoration:none; color:#F50}
-.staff_main, .project_main{
+.staff_main, .project_main, .sales_main{
 	display:block;
 	float:right;
 	width:760px;
@@ -465,10 +489,13 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 .staff_main .table th{ font-size:1.063em; text-align:center; }
 .staff_main .table td{ font-size:0.938em; text-align:center}
 .staff_main .box_page{ display:block; width:50%; margin:0 auto}
-#box_mainsingle .staff_main h3, #box_mainsingle .project_main h3{ float:left; width:90%; margin-bottom:5px}
-.staff_main .btn, .project_main .btn{ float:right}
-.staff_main .box_txt p, .project_main .box_txt p{ font-size:1.063em; line-height:22px; padding:5px}
-.staff_main .box_txt img, .project_main .box_txt img{ margin:5px}
+#box_mainsingle .staff_main h3, #box_mainsingle .project_main h3, #box_mainsingle .sales_main h3{ float:left; width:90%; margin-bottom:5px}
+.staff_main .btn, .project_main .btn, .sales_main .btn{ float:right}
+.staff_main .box_txt p, .project_main .box_txt p, .sales_main .box_txt p{ font-size:1.063em; line-height:22px; padding:5px}
+.staff_main .box_txt img, .project_main .box_txt img, .sales_main .box_txt img{ margin:5px}
+.box_txt a:link {text-decoration: underline; color:#0492ce}
+.box_txt a:visited {text-decoration: underline; color:#8c8c8c}
+.box_txt a:hover {text-decoration:none; color:#F50}
 .box_upload{
 	display:block;
 	width:760px;
@@ -491,7 +518,7 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 	line-height:25px;
 	padding:8px 0;
 	border-bottom:1px dashed #D5D5D5}
-.staff_main .btn_down, .project_main .btn_down{
+.staff_main .btn_down, .project_main .btn_down, .sales_main .btn_down{
 	display:block;
 	float:right;
 	margin-top:15px}
