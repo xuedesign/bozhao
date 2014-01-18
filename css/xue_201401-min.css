@@ -476,9 +476,9 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 	-ms-border-radius: 10px;
 	border-radius: 10px}
 .sub_nav li.subnav-in a{color:#FFF; font-weight:bold; letter-spacing:1px}		
-.sub_nav a:link, .staff_main a:link, #box_main .company_info a:link{text-decoration:none; color:#0492ce}
-.sub_nav a:visited, .staff_main a:visited, #box_main .company_info a:visited{text-decoration:none; color:#8c8c8c}
-.sub_nav a:hover, .staff_main a:hover, #box_main .company_info a:hover{text-decoration:none; color:#F50}
+.sub_nav a:link, .staff_main a:link, #box_main .company_info a:link, .project_main a:link, .sales_main a:link{text-decoration:none; color:#0492ce}
+.sub_nav a:visited, .staff_main a:visited, #box_main .company_info a:visited, .project_main a:visited, .sales_main a:visited{text-decoration:none; color:#8c8c8c}
+.sub_nav a:hover, .staff_main a:hover, #box_main .company_info a:hover, .project_main a:hover, .sales_main a:hover{text-decoration:none; color:#F50}
 .staff_main, .project_main, .sales_main{
 	display:block;
 	float:right;
@@ -495,7 +495,7 @@ aside hr{ margin:5px 0 15px 0; padding:0}
 .staff_main .box_txt img, .project_main .box_txt img, .sales_main .box_txt img{ margin:5px}
 .box_txt a:link {text-decoration: underline; color:#0492ce}
 .box_txt a:visited {text-decoration: underline; color:#8c8c8c}
-.box_txt a:hover {text-decoration:none; color:#F50}
+.box_txt a:hover {text-decoration: none; color:#F50}
 .box_upload{
 	display:block;
 	width:760px;
